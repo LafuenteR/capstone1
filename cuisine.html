@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">
+  ul li:hover ul{
+    display: block;
+  }
+  figure{
+    text-align: center;
+    margin-right: 0px;
+    padding: 20px 0;
+  }
+  figure > img{
+    width: 300px;
+    height: 300px;
+  }
+
+  </style>
+  </head>
+  <body>
+  <header class="container-fluid" style="padding: 0;">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="images/Untitled.jpg" style="width: 30px; height: 30px;"></a>
+          </div>
+          <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left" id="nav">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#asian">Asian Cuisine<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="cuisine.html#filipino">Filipino</a></li>
+                  <li><a href="cuisine.html#japanese">Japanese</a></li>
+                  <li><a href="cuisine.html#chinese">Chinese</a></li>
+                  <li><a href="cuisine.html#korean">Korean</a></li>
+                  <li><a href="cuisine.html#indian">Indian</a></li>
+                  <li><a href="cuisine.html#thai">Thai</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#european">European Cuisine<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="cuisine.html#spanish">Spanish</a></li>
+                  <li><a href="cuisine.html#italian">Italian</a></li>
+                  <li><a href="cuisine.html#french">French</a></li>
+                </ul>
+              </li>
+              <li><a href="cuisine.html#buffet">Buffets</a></li>
+              <li><a href="cuisine.html#american">American Cuisine</a></li>
+              <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="nav">
+              <li><a href="signUp.html#logInAccountId" class="logInAccount">Log In</a></li>
+              <li><a href="signUp.html">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div id="asian">
+        <div id="filipino" class="row">
+        <h1>Filipino Restaurant</h1>
+        <hr>
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/sentro1771.jpg">
+            <figcaption>
+              <h3>Sentro 1771</h3>
+              <h5>Greenbelt 3, Ayala Center, Makati City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+
+          </figure>
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/cafeJuanita.jpg">
+            <figcaption>
+              <h3>Cafe Juanita</h3>
+              <h5>United Street, Pasig City</h5>
+             <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/kabila.jpg">
+            <figcaption>
+              <h3>Kabila</h3>
+              <h5>Museum Cafe, Ayala Museum Complex, Greenbelt 4, Makati City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/woodenSpoon.jpg">
+            <figcaption>
+              <h3>Wooden Spoon</h3>
+              <h5>Katipunan Avenue, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- filipino div -->
+
+        <div id="japanese" class="row">
+
+          <h1>Japanese Restaurant</h1>
+          <hr>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/iseSueyoshi.jpg">
+            <figcaption>
+              <h3>Ise Sueyoshi</h3>
+              <h5>4-2-15 Nishiazabu | 3F Mizuno Bldg., <br>Minato 106-0031, Tokyo Prefecture</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/engawa.jpg">
+            <figcaption>
+              <h3>Engawa</h3>
+              <h5>Ham Yard, Soho, <br>London</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          </figure>
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/theAraki.jpg">
+            <figcaption>
+              <h3>The Araki</h3>
+              <h5>12 New Burlington Street, London W1S <br>3BH, United Kingdom</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- Japanese Div -->
+
+        <div id="chinese" class="row">
+          <h1>Chinese Restaurant</h1>
+          <hr>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/timhowan.jpg">
+            <figcaption>
+              <h3>Tim Ho Wan</h3>
+              <h5>Upper Ground Floor, SM Megamall</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/pekingGarden.jpg">
+            <figcaption>
+              <h3>Peking Garden</h3>
+              <h5>Greenbelt 5, Makati City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/choiGarden.jpg">
+            <figcaption>
+              <h3>Choi Garden</h3>
+              <h5> 2/F Atrium, SM Megamll</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- Chinese Div -->
+
+        <div id="korean" class="row">
+          <h1>Korean Restaurant</h1>
+          <hr>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/jungSikDang.jpg">
+            <figcaption>
+              <h3>Jung Sik Dang</h3>
+              <h5>11, Seolleung-ro 158-gil, Gangnam-gu, Seoul <br>06014, South Korea</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/songjookheon.jpg">
+            <figcaption>
+              <h3>Song Juk Heon</h3>
+              <h5>37-2, Unni-dong, Jongno-gu, <br>Seoul, South Korea</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/yongSuSan.jpg">
+            <figcaption>
+              <h3>Yong Su San</h3>
+              <h5> 84, Taepyeongno 1(il)-ga, Jung-gu, <br>Seoul, South Korea</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- Korean Div -->
+
+        <div id="indian" class="row">
+          <h1>Indian Restaurant</h1>
+          <hr>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/littleIndia.jpg">
+            <figcaption>
+              <h3>Little India Healthy Cuisine</h3>
+              <h5>24-F, 2nd Floor, Malingap St. Teachers Village, <br>Diliman, Quezon City, 1101 Metro Manila</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/legendOfIndia.jpg">
+            <figcaption>
+              <h3>Legend of India</h3>
+              <h5> 114B Jupiter Street, Bel-Air II, Makati, <br>1209 Metro Manila, Philippines</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- Indian Div -->
+
+        <div id="thai" class="row">
+
+          <h1>Thai Restaurant</h1>
+          <hr>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/basil.jpg">
+            <figcaption>
+              <h3>Basil</h3>
+              <h5>Katipunan Avenue corner White Plains, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/navModernThai.jpg">
+            <figcaption>
+              <h3>Nav Modern Thai</h3>
+              <h5>16C United Street, Kapitolyo, Pasig City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- thai div -->
+
+      </div> <!-- asian div -->
+
+      <div id="european">
+        <div id="spanish" class="row">
+         <h1>Spanish Restaurant</h1>
+          <hr>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- Spanish Div -->
+
+        <div id="italian" class="row">
+          <h1>Italian Restaurant</h1>
+          <hr>
+          
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a>
+            </figcaption>
+          </figure>
+
+        </div> <!-- Italian Div -->
+
+        <div id="french" class="row">
+          <h1>French Restaurant</h1>
+          <hr>
+          
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <a href="book.html">
+                <button>Book Resto</button>
+              </a
+>            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <button>Book Resto</button>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Thaipan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <button>Book Resto</button>
+            </figcaption>
+          </figure>
+
+        </div> <!-- French Div -->
+
+      </div> <!-- european class -->
+
+      <div id="buffet" class="row">
+        <h1>Buffet</h1>
+        <hr>
+
+        <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Vikings</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <button>Book Resto</button>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/yakimix1.jpg">
+            <figcaption>
+              <h3>Yakimix</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <button>Book Resto</button>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-4 col-sm-6">
+            <img src="images/thaipan.jpg">
+            <figcaption>
+              <h3>Dads Kamayan</h3>
+              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
+              <button>Book Resto</button>
+            </figcaption>
+          </figure>
+
+      </div> <!-- Buffet -->
+
+      <div id="american" class="row">
+        <h1>American Restaurant</h1>
+        <hr>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="thumbnail"><img src="images/isesueyoshi.png"></a>
+          <h3>AMerican Resto</h3>
+          <h5>Address</h5>
+          <button>Book Resto</button>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="thumbnail"><img src="images/isesueyoshi.png"></a>
+          <h3>AMerican Resto</h3>
+          <h5>Address</h5>
+          <button>Book Resto</button>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="#" class="thumbnail"><img src="images/isesueyoshi.png"></a>
+          <h3>American Resto</h3>
+          <h5>Address</h5>
+          <button>Book Resto</button>
+        </div>
+      </div>
+    </div>  <!-- Last Div -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
