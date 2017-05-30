@@ -57,6 +57,21 @@
     .logInForm{
       display: none;
     }
+    .social > ul > li  {
+      list-style-type: none;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+    }
+    .row > div > ul > li{
+      list-style-type: none;
+    }
+    footer{
+      margin-bottom: 0;
+      background: rgba(254,254,254,0.1);
+      width: 100%;
+      padding-top: 10px;
+    }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
@@ -70,7 +85,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand"><img src="images/Untitled.jpg" style="width: 30px; height: 30px;"></a>
+            <a href="index.html" class="navbar-brand">BookEatList</a>
           </div>
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
             <ul class="nav navbar-nav navbar-left" id="nav">
@@ -122,19 +137,6 @@
          </ul>
          <ul>
            <li>
-            <h1>Bills and Payment</h1>
-           </li>
-           <li>
-             <input type="password" placeholder="Account Number">
-           </li>
-           <li>
-             <input type="password" placeholder="CVV2">
-           </li>
-           <li>
-             <label>Exp Date</label><br>
-             <input type="month" placeholder="Exp Date">
-           </li>
-           <li>
              <button class="signUp">Sign Up</button>
            </li>
            <li>
@@ -166,6 +168,37 @@
         </form>
       </div> <!-- container --> 
     </div> <!-- container-fluid --> 
+    <footer class="row">
+      <div class="social col-md-6" style="float: left;">
+        <ul>
+
+          <li>
+            <a href="#"> <img src="images/fb.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/tweet.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/google.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/pinterest.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/tumblr.svg"></a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <span>Copyright &copy 2017. All rights reserved.</span>
+      </div>
+
+    </footer>
     <script type="text/javascript">
       $(document).ready(function(){
         // $(".logInForm").hide();

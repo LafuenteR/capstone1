@@ -23,18 +23,60 @@
   figure{
     text-align: center;
     margin-right: 0px;
-    padding: 20px 0;
+   
   }
   figure > img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
-
+  figure > figcaption > select {
+    text-align: right;
+  }
+  .affix{
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .row > div > div > ul > li{
+    list-style-type: none;
+  }
+  figcaption > ul > li{
+    display: inline-block;
+    text-align: left;
+  }
+  .panel-heading > img{
+    width: 80%;
+    height: 200px;
+  }
+  .panel-heading{
+    text-align: center;
+  }
+  .panel-body{
+    text-align: center;
+  }
+  p{
+    text-align: left;
+  }
+  .social > ul > li  {
+    list-style-type: none;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+  }
+  .row > div > ul > li{
+    list-style-type: none;
+  }
+  footer{
+    margin-bottom: 0;
+    background: rgba(254,254,254,0.1);
+    width: 100%;
+    padding-top: 10px;
+  }  
   </style>
   </head>
   <body>
   <header class="container-fluid" style="padding: 0;">
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default" data-spy="affix" data-offset="50">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -42,7 +84,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand"><img src="images/Untitled.jpg" style="width: 30px; height: 30px;"></a>
+            <a href="index.html" class="navbar-brand">BookEatList</a>
           </div>
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
             <ul class="nav navbar-nav navbar-left" id="nav">
@@ -80,49 +122,86 @@
         <div id="filipino" class="row">
         <h1>Filipino Restaurant</h1>
         <hr>
-          <figure class="col-md-4 col-sm-6">
+
+        <div class="col-md-4 col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
             <img src="images/sentro1771.jpg">
-            <figcaption>
-              <h3>Sentro 1771</h3>
-              <h5>Greenbelt 3, Ayala Center, Makati City</h5>
+          </div>
+          <div class="panel-body">
+             <h3>Sentro 1771</h3>
+              <p>Greenbelt 3, Ayala Center, Makati City</p>
+              <p>9AM-10PM (Sat-Sun)</p>
+              <p><strong>Food Range: 1000++</strong></p>
+              <p>
+                <a href="#">Ratings</a>
+              </p>
               <a href="book.html">
-                <button>Book Resto</button>
+                <button>Book a Table</button>
               </a>
-            </figcaption>
+          </div>
+        </div>
+        </div>
 
-          </figure>
-          <figure class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
             <img src="images/cafeJuanita.jpg">
-            <figcaption>
-              <h3>Cafe Juanita</h3>
-              <h5>United Street, Pasig City</h5>
-             <a href="book.html">
-                <button>Book Resto</button>
+          </div>
+          <div class="panel-body">
+             <h3>Cafe Juanita</h3>
+              <p>United Street, Pasig City</p>
+              <p>9AM-10PM (Sat-Sun)</p>
+              <p><strong>Food Range: 1000++</strong></p>
+              <p>
+                <a href="#">Ratings</a>
+              </p>
+              <a href="book.html">
+                <button>Book a Table</button>
               </a>
-            </figcaption>
-          </figure>
+          </div>
+        </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="images/woodenspoon.jpg">
+          </div>
+          <div class="panel-body">
+             <h3>Wooden Spoon</h3>
+              <p>Katipunan Avenue, Quezon City</p>
+              <p>9AM-10PM (Sat-Sun)</p>
+              <p><strong>Food Range: 1000++</strong></p>
+              <p>
+                <a href="#">Ratings</a>
+              </p>
+              <a href="book.html">
+                <button>Book a Table</button>
+              </a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
             <img src="images/kabila.jpg">
-            <figcaption>
-              <h3>Kabila</h3>
-              <h5>Museum Cafe, Ayala Museum Complex, Greenbelt 4, Makati City</h5>
+          </div>
+          <div class="panel-body">
+             <h3>Kabila</h3>
+              <p>Museum Cafe, Ayala Museum Complex, Greenbelt 4, Makati City</p>
+              <p>9AM-10PM (Sat-Sun)</p>
+              <p><strong>Food Range: 1000++</strong></p>
+              <p>
+                <a href="#">Ratings</a>
+              </p>
               <a href="book.html">
-                <button>Book Resto</button>
+                <button>Book a Table</button>
               </a>
-            </figcaption>
-          </figure>
-
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/woodenSpoon.jpg">
-            <figcaption>
-              <h3>Wooden Spoon</h3>
-              <h5>Katipunan Avenue, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+          </div>
+        </div>
+        </div>
 
         </div> <!-- filipino div -->
 
@@ -131,39 +210,67 @@
           <h1>Japanese Restaurant</h1>
           <hr>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/iseSueyoshi.jpg">
-            <figcaption>
-              <h3>Ise Sueyoshi</h3>
-              <h5>4-2-15 Nishiazabu | 3F Mizuno Bldg., <br>Minato 106-0031, Tokyo Prefecture</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/iseSueyoshi.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Ise Sueyoshi</h3>
+                <p>4-2-15 Nishiazabu | 3F Mizuno Bldg., Minato 106-0031, Tokyo Prefecture</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/engawa.jpg">
-            <figcaption>
-              <h3>Engawa</h3>
-              <h5>Ham Yard, Soho, <br>London</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/engawa.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Engawa</h3>
+                <p>Ham Yard, Soho, London</p><br>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          </figure>
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/theAraki.jpg">
-            <figcaption>
-              <h3>The Araki</h3>
-              <h5>12 New Burlington Street, London W1S <br>3BH, United Kingdom</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/theAraki.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>The Araki</h3>
+                <p>12 New Burlington Street, London W1S 3BH, United Kingdom</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
+
+         
 
         </div> <!-- Japanese Div -->
 
@@ -171,38 +278,66 @@
           <h1>Chinese Restaurant</h1>
           <hr>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/timhowan.jpg">
-            <figcaption>
-              <h3>Tim Ho Wan</h3>
-              <h5>Upper Ground Floor, SM Megamall</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/timhowan.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Tim Ho Wan</h3>
+                <p>Upper Ground Floor, SM Megamall</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/pekingGarden.jpg">
-            <figcaption>
-              <h3>Peking Garden</h3>
-              <h5>Greenbelt 5, Makati City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/pekingGarden.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Peking Garden</h3>
+                <p>Greenbelt 5, Makati City</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/choiGarden.jpg">
-            <figcaption>
-              <h3>Choi Garden</h3>
-              <h5> 2/F Atrium, SM Megamll</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/choiGarden.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Choi Garden</h3>
+                <p>2/F Atrium, SM Megamall</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
+          
 
         </div> <!-- Chinese Div -->
 
@@ -210,38 +345,66 @@
           <h1>Korean Restaurant</h1>
           <hr>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/jungSikDang.jpg">
-            <figcaption>
-              <h3>Jung Sik Dang</h3>
-              <h5>11, Seolleung-ro 158-gil, Gangnam-gu, Seoul <br>06014, South Korea</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/jungSikDang.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Jung Sik Dang</h3>
+                <p>11, Seolleung-ro 158-gil, Gangnam-gu, Seoul 06014, South Korea</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/songjookheon.jpg">
-            <figcaption>
-              <h3>Song Juk Heon</h3>
-              <h5>37-2, Unni-dong, Jongno-gu, <br>Seoul, South Korea</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/songjookheon.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Song Juk Heon</h3>
+                <p>37-2, Unni-dong, Jongno-gu, Seoul, South <br>Korea</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/yongSuSan.jpg">
-            <figcaption>
-              <h3>Yong Su San</h3>
-              <h5> 84, Taepyeongno 1(il)-ga, Jung-gu, <br>Seoul, South Korea</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/yongSuSan.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Yong Su San</h3>
+                <p>84, Taepyeongno 1(il)-ga, Jung-gu, Seoul, South Korea</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
+          
 
         </div> <!-- Korean Div -->
 
@@ -249,27 +412,46 @@
           <h1>Indian Restaurant</h1>
           <hr>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/littleIndia.jpg">
-            <figcaption>
-              <h3>Little India Healthy Cuisine</h3>
-              <h5>24-F, 2nd Floor, Malingap St. Teachers Village, <br>Diliman, Quezon City, 1101 Metro Manila</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/littleIndia.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Little India Healthy Cuisine</h3>
+                <p>24-F, 2nd Floor, Malingap St. Teachers Village, Diliman, Quezon City, 1101 Metro Manila</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/legendOfIndia.jpg">
-            <figcaption>
-              <h3>Legend of India</h3>
-              <h5> 114B Jupiter Street, Bel-Air II, Makati, <br>1209 Metro Manila, Philippines</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/legendOfIndia.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Legend of India</h3>
+                <p>114B Jupiter Street, Bel-Air II, Makati, 1209 Metro Manila, Philippines</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
+          
 
         </div> <!-- Indian Div -->
 
@@ -278,38 +460,65 @@
           <h1>Thai Restaurant</h1>
           <hr>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/basil.jpg">
-            <figcaption>
-              <h3>Basil</h3>
-              <h5>Katipunan Avenue corner White Plains, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/basil.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Basil</h3>
+                <p>Katipunan Avenue corner White Plains, Quezon City</p><br>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/navModernThai.jpg">
-            <figcaption>
-              <h3>Nav Modern Thai</h3>
-              <h5>16C United Street, Kapitolyo, Pasig City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/navModernThai.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Nav Modern Thai</h3>
+                <p>16C United Street, Kapitolyo, Pasig City</p><br>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/thaipan.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Thaipan</h3>
+                <p>120 Scout Lazcano Street, Tomas Morato, Quezon City</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
         </div> <!-- thai div -->
 
@@ -320,77 +529,131 @@
          <h1>Spanish Restaurant</h1>
           <hr>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/alba.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Alba Restaurante Español</h3>
+                <p>Tomas Morato corner Scout Lozano, Quezon City</p><br>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/vask.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>VASK Tapas Room</h3>
+                <p>Fifth Floor, Clipp Center, 11th Avenue Corner 39th Street, BGC, Taguig City</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/mario.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Mario's</h3>
+                <p>191 Tomas Morato Avenue Corner Scout Gandia Street, Tomas Morato, Quezon City</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
         </div> <!-- Spanish Div -->
 
         <div id="italian" class="row">
           <h1>Italian Restaurant</h1>
           <hr>
-          
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/clubDelDoge.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Club del Doge Restaurant</h3>
+                <p>Campo Santa Maria del Giglio, 2467, 30124 Venezia, Italy</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/daVittorio.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Da Vittorio (Brusaporto)</h3>
+                <p>Via Cantalupa, 17, 24060 Brusaporto BG, Italy</p><br>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/dalPescatore.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Dal Pescatore (Runate)</h3>
+                <p>Località Runate, 15, 46013 Canneto Sull'oglio MN, Italy</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>          
 
         </div> <!-- Italian Div -->
 
@@ -398,34 +661,65 @@
           <h1>French Restaurant</h1>
           <hr>
           
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <a href="book.html">
-                <button>Book Resto</button>
-              </a
->            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/mirazur.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Mirazur</h3>
+                <p>30 Avenue Aristide Briand, 06500 Menton, France</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <button>Book Resto</button>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/larpege.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>L’Arpège</h3>
+                <p>84 Rue de Varenne, 75007 Paris, France</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Thaipan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <button>Book Resto</button>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/le.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Le Chateaubriand</h3>
+                <p>129 Avenue Parmentier, 75011 Paris, France</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div> 
 
         </div> <!-- French Div -->
 
@@ -435,59 +729,166 @@
         <h1>Buffet</h1>
         <hr>
 
-        <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Vikings</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <button>Book Resto</button>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/vikings1.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Vikings</h3>
+                <p>Upper Ground Floor, SM Megamall</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/yakimix1.jpg">
-            <figcaption>
-              <h3>Yakimix</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <button>Book Resto</button>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/yakimix1.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Yakimix</h3>
+                <p>3rd Floor, The Podium</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
 
-          <figure class="col-md-4 col-sm-6">
-            <img src="images/thaipan.jpg">
-            <figcaption>
-              <h3>Dads Kamayan</h3>
-              <h5>120 Scout Lazcano Street, Tomas Morato, Quezon City</h5>
-              <button>Book Resto</button>
-            </figcaption>
-          </figure>
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/dads1.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Dads Kamayan</h3>
+                <p>3rd Floor, Mega B, SM Megamall</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div> 
 
       </div> <!-- Buffet -->
 
       <div id="american" class="row">
         <h1>American Restaurant</h1>
         <hr>
-        <div class="col-md-4 col-sm-6">
-          <a href="#" class="thumbnail"><img src="images/isesueyoshi.png"></a>
-          <h3>AMerican Resto</h3>
-          <h5>Address</h5>
-          <button>Book Resto</button>
+        
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/gotham.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Gotham Bar And Grill</h3>
+                <p>12 E 12th St, New York, NY 10003, USA</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <a href="#" class="thumbnail"><img src="images/isesueyoshi.png"></a>
-          <h3>AMerican Resto</h3>
-          <h5>Address</h5>
-          <button>Book Resto</button>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <a href="#" class="thumbnail"><img src="images/isesueyoshi.png"></a>
-          <h3>American Resto</h3>
-          <h5>Address</h5>
-          <button>Book Resto</button>
-        </div>
-      </div>
-    </div>  <!-- Last Div -->
 
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/tocqueville.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Tocqueville</h3>
+                <p>1 East 15th Street, New York, NY 10003, USA</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img src="images/gramercy.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Gramercy Tavern</h3>
+                <p>42 East 20th Street, New York, NY 10003, USA</p>
+                <p>9AM-10PM (Sat-Sun)</p>
+                <p><strong>Food Range: 1000++</strong></p>
+                <p>
+                  <a href="#">Ratings</a>
+                </p>
+                <a href="book.html">
+                  <button>Book a Table</button>
+                </a>
+            </div>
+          </div>
+        </div>        
+
+      </div> <!-- American Div -->
+
+    </div>  <!-- Last Div -->
+    <footer class="row">
+      <div class="social col-md-6" style="float: left;">
+        <ul>
+
+          <li>
+            <a href="#"> <img src="images/fb.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/tweet.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/google.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/pinterest.svg"></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="images/tumblr.svg"></a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <span>Copyright &copy 2017. All rights reserved.</span>
+      </div>
+
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
