@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
+    <title>BookEatList</title>
+    <link rel="icon" type="images" href="images/logo.jpg" sizes="20x20">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,7 +29,7 @@
     text-align: left;
     width: 500px;
   }
-  .container > form > ul > li > input{
+  .container > form > ul > li > input, select{
     width: 100%;
     height: 40px;
     border-radius: 10px;
@@ -52,12 +52,29 @@
     .row > div > ul > li{
       list-style-type: none;
     }
+    .row > div{
+      text-align: center;
+    }
     footer{
       margin-bottom: 0;
-      background: rgba(254,254,254,0.1);
+      background: rgba(255,255,255,0.5);
       width: 100%;
-      padding-top: 10px;
     }
+    h1{
+      font-family: arial;
+      text-align: center;
+    }
+    .date-of-appointment{
+      width: 100%;
+    }
+   .navbar-brand > span{
+      font-family: verdana;
+      color: black;
+      font-weight: bold;
+   }
+   form{
+    margin-bottom: 42vh;
+   }
   </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -70,7 +87,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand">BookEatList</a>
+            <a href="index.html" class="navbar-brand"><span>BookEatList</span></a>
           </div>
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
             <ul class="nav navbar-nav navbar-left" id="nav">
@@ -96,7 +113,7 @@
               <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav">
-              <li><a href="signUp.html#logInAccountId" >Log In</a></li>
+              <li><a href="login.html" >Log In</a></li>
               <li><a href="signUp.html">Sign Up</a></li>
             </ul>
           </div>
@@ -105,21 +122,124 @@
     </header>
     <div class="container-fluid" style="text-align: center;">
       <div class="container" style="width: 500px;">
-        <form class="bookForm">
+        <form>
           <ul>
             <li>
               <h1>Log In and reserve your fave resto</h1>
             </li>
             <li>
-              <input type="number" placeholder="Table for" max="100">
+              <label>Table for:</label>
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+              </select>
+            </li>
+            <li class="date-of-appointment">
+            <label>Date of Reservations</label>
+              <span class="row">
+                <select class="col-md-6">
+                  <option>Month</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+                <select class="col-md-6">
+                  <option>Day</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </span>
             </li>
             <li>
-            <label>Date of Reservations</label><br>
-              <input type="date" placeholder="Date">
-            </li>
-            <li>
-            <label>Time of Reservations</label><br>
-              <input type="time" placeholder="Time">
+            <label>Time of Reservations</label>
+              <span class="row">
+                <select class="col-md-4">
+                  <option>Hour</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <select class="col-md-4">
+                  <option>Minutes</option>
+                  <option>00</option>
+                  <option>30</option>
+                </select>
+                <select class="col-md-4">
+                  <option>Period</option>
+                  <option>AM</option>
+                  <option>PM</option>
+                </select>
+              </span>
             </li>
             <li>
               <button class="book">Book</button>
@@ -128,35 +248,40 @@
         </form>
       </div>
     </div>
-    <footer class="row">
-      <div class="social col-md-6" style="float: left;">
-        <ul>
 
-          <li>
-            <a href="#"> <img src="images/fb.svg"></a>
-          </li>
+    <hr>
+    <footer class="container">
+    <div class="container-fluid row">
+        <div class="col-md-12">
+          <span>Copyright &copy 2017. All rights reserved.</span>
+        </div>
 
-          <li>
-            <a href="#"><img src="images/tweet.svg"></a>
-          </li>
+        <div class="social col-md-12">
+          <ul>
 
-          <li>
-            <a href="#"><img src="images/google.svg"></a>
-          </li>
+            <li>
+              <a href="#"> <img src="images/fb.svg"></a>
+            </li>
 
-          <li>
-            <a href="#"><img src="images/pinterest.svg"></a>
-          </li>
+            <li>
+              <a href="#"><img src="images/tweet.svg"></a>
+            </li>
 
-          <li>
-            <a href="#"><img src="images/tumblr.svg"></a>
-          </li>
+            <li>
+              <a href="#"><img src="images/google.svg"></a>
+            </li>
 
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <span>Copyright &copy 2017. All rights reserved.</span>
-      </div>
+            <li>
+              <a href="#"><img src="images/pinterest.svg"></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="images/tumblr.svg"></a>
+            </li>
+
+          </ul>
+        </div>
+    </div>
 
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

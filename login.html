@@ -28,14 +28,32 @@
       background: rgba(255,255,255,0.5);
       width: 100%;
     }
-    .carousel-inner > .item > a > img{
-      width: 100%;
-      height: 80vh;
+    .container > form > ul > li{
+      margin-bottom: 10px;
+      width: 500px;
     }
-   
-    h1{
-      /*text-shadow: 2px 2px 4px red;*/
-      color: black;
+    .container > form > ul{
+      list-style-type: none;
+      margin-bottom: 50px;
+      text-align: left;
+      width: 500px;
+    }
+    .container > form > ul > li > input{
+      width: 100%;
+      height: 40px;
+      border-radius: 10px;
+    }
+    .container > form > ul > li > p, h1{
+      text-align: center;
+    }
+    .account{
+      text-align: center;
+    }
+    .log-In{
+      width: 100%;
+      height: 50px;
+      background: #3897f0;
+      border-radius: 10px;
     }
     .social > ul > li  {
       list-style-type: none;
@@ -54,26 +72,18 @@
       background: rgba(255,255,255,0.5);
       width: 100%;
     }
-  .navbar-default{
-   margin-bottom: 0px;
-  }
-  .col-md-1 > img{
-    padding-top: 10px;
-    width: 100%;
-    height: 100%;
-  }
-   .col-md-11 > h1, p{
-    text-align: left;
-   }
    .navbar-brand > span{
       font-family: verdana;
       color: black;
       font-weight: bold;
    }
-
-  </style>
+   form{
+    margin-bottom: 47vh;
+   }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body>
     <header class="container-fluid" style="padding: 0;">
       <nav class="navbar navbar-default">
         <div class="container">
@@ -87,7 +97,7 @@
           </div>
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
             <ul class="nav navbar-nav navbar-left" id="nav">
-              <li class="dropdown"><a href="cuisine.html#asian" class="dropdown-toggle" data-toggle="dropdown">Asian Cuisine<span class="caret"></span></a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#asian">Asian Cuisine<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="cuisine.html#filipino">Filipino</a></li>
                   <li><a href="cuisine.html#japanese">Japanese</a></li>
@@ -109,77 +119,39 @@
               <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav">
-              <li><a href="login.html">Log In</a></li>
+              <li><a href="login.html" class="logInAccount">Log In</a></li>
               <li><a href="signUp.html">Sign Up</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="container-fluid" style="text-align: center;">
+      <div class="container" style="width: 500px;">
+        <form>
+          <ul>
+            <li>
+              <h1>Log In and reserve your restaurant</h1>
+            </li>
+            <li>
+              <input type="email" placeholder="Email">
+            </li>
+            <li>
+              <input type="password" placeholder="Password">
+            </li>
+            <li>
+              <button class="log-In">Log In</button>
+            </li>
+            <li class="account">
+              Don't have an account? <a href="signUp.html">Sign Up</a>
+            </li>
+          </ul>
+        </form>
+      </div> <!-- container --> 
+    </div> <!-- container-fluid --> 
 
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="item active">
-        <a href="cuisine.html#vikings">
-            <img src="images/vikings.jpg" alt="Slide 1">
-            <div class="carousel-caption">
-              <h1>Vikings Promo</h1>
-            </div>
-        </a>
-      </div>
-            
-      
-
-        <div class="item">
-          <a href="cuisine.html#dads">
-            <img src="images/dads.jpg" alt="Slide 2">
-            <div class="carousel-caption">
-              <h1>Dads Kamayan Promo</h1>
-            </div>
-          </a>
-        </div>
-
-        <div class="item">
-          <a href="cuisine.html#yakimix">
-            <img src="images/yakimix.jpg" alt="Slide 3">
-            <div class="carousel-caption">
-              <h1>Yakimix Graduation Promo</h1>
-            </div>
-          </a>
-        </div>
-      </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>  
-        </a>
-
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div> <!-- carousel-inner -->
-    </div> <!-- #myCarousel -->
-    <div class="container">
-      <div class="container-fluid row">
-        <div class="col-md-1">
-          <img src="images/clock.jpg">
-        </div>
-        <div class="col-md-11">
-          <h1 class="text-warning">Friendly Reminder!</h1>
-          <p>Table will only be held for 30 mins after booking time. Bookings not guaranteed for late arrivals.</p>
-        </div>
-      </div>
-    </div>
     <hr>
     <footer class="container">
-
     <div class="container-fluid row">
         <div class="col-md-12">
           <span>Copyright &copy 2017. All rights reserved.</span>
@@ -219,3 +191,6 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
+

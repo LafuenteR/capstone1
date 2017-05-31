@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
+    <title>BookEatList</title>
+    <link rel="icon" type="images" href="images/logo.jpg" sizes="20x20">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,18 +20,6 @@
   ul li:hover ul{
     display: block;
   }
-  figure{
-    text-align: center;
-    margin-right: 0px;
-   
-  }
-  figure > img{
-    width: 200px;
-    height: 200px;
-  }
-  figure > figcaption > select {
-    text-align: right;
-  }
   .affix{
     top: 0;
     width: 100%;
@@ -40,19 +28,19 @@
   .row > div > div > ul > li{
     list-style-type: none;
   }
-  figcaption > ul > li{
-    display: inline-block;
-    text-align: left;
-  }
   .panel-heading > img{
     width: 80%;
+    height: 200px;
+  }
+  .panel-heading > img:hover {
+    width: 100%;
     height: 200px;
   }
   .panel-heading{
     text-align: center;
   }
   .panel-body{
-    text-align: center;
+    text-align: left;
   }
   p{
     text-align: left;
@@ -66,12 +54,47 @@
   .row > div > ul > li{
     list-style-type: none;
   }
+  .row > div{
+      text-align: center;
+    }
   footer{
     margin-bottom: 0;
-    background: rgba(254,254,254,0.1);
+    background: rgba(255,255,255,0.5);
     width: 100%;
-    padding-top: 10px;
   }  
+  button{
+    background: #3897f0;
+    border-radius: 10px;
+    color: black;
+    width: 100%;
+    height: 30px;
+  }
+  button:hover{
+   background-color: aquamarine;
+  }
+   .navbar-brand > span{
+      font-family: verdana;
+      color: black;
+      font-weight: bold;
+   }
+  .panel-body > ul > li{
+    display: inline-block;
+    list-style-type: none;
+  }
+   .panel-heading > img, .panel-body > a > button{
+    box-sizing: border-box;
+   }
+   .panel-body > ul > li > input{
+    text-align: left;
+    padding-left: 0px;
+   }
+   .panel-body > ul{
+   list-style: none;
+   -webkit-padding-start: 0px;
+   }
+   h3{
+    text-align: center;
+   }
   </style>
   </head>
   <body>
@@ -84,7 +107,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand">BookEatList</a>
+            <a href="index.html" class="navbar-brand"><span>BookEatList</span></a>
           </div>
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
             <ul class="nav navbar-nav navbar-left" id="nav">
@@ -110,7 +133,7 @@
               <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav">
-              <li><a href="signUp.html#logInAccountId" class="logInAccount">Log In</a></li>
+              <li><a href="login.html" class="logInAccount">Log In</a></li>
               <li><a href="signUp.html">Sign Up</a></li>
             </ul>
           </div>
@@ -120,7 +143,11 @@
     <div class="container">
       <div id="asian">
         <div id="filipino" class="row">
-        <h1>Filipino Restaurant</h1>
+        <h1>
+          Filipino Restaurant
+          <img src="images/ph.png">
+        </h1>
+        
         <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -131,11 +158,18 @@
           <div class="panel-body">
              <h3>Sentro 1771</h3>
               <p>Greenbelt 3, Ayala Center, Makati City</p>
-              <p>9AM-10PM (Sat-Sun)</p>
+              <p>9AM-10PM (Sun-Sat)</p>
               <p><strong>Food Range: 1000++</strong></p>
-              <p>
-                <a href="#">Ratings</a>
-              </p>
+              
+              <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+                
               <a href="book.html">
                 <button>Book a Table</button>
               </a>
@@ -151,11 +185,18 @@
           <div class="panel-body">
              <h3>Cafe Juanita</h3>
               <p>United Street, Pasig City</p>
-              <p>9AM-10PM (Sat-Sun)</p>
+              <p>9AM-10PM (Sun-Sat)</p>
               <p><strong>Food Range: 1000++</strong></p>
-              <p>
-                <a href="#">Ratings</a>
-              </p>
+              
+              <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
               <a href="book.html">
                 <button>Book a Table</button>
               </a>
@@ -171,11 +212,18 @@
           <div class="panel-body">
              <h3>Wooden Spoon</h3>
               <p>Katipunan Avenue, Quezon City</p>
-              <p>9AM-10PM (Sat-Sun)</p>
+              <p>9AM-10PM (Sun-Sat)</p>
               <p><strong>Food Range: 1000++</strong></p>
-              <p>
-                <a href="#">Ratings</a>
-              </p>
+              
+              <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
               <a href="book.html">
                 <button>Book a Table</button>
               </a>
@@ -191,11 +239,18 @@
           <div class="panel-body">
              <h3>Kabila</h3>
               <p>Museum Cafe, Ayala Museum Complex, Greenbelt 4, Makati City</p>
-              <p>9AM-10PM (Sat-Sun)</p>
+              <p>9AM-10PM (Sun-Sat)</p>
               <p><strong>Food Range: 1000++</strong></p>
-              <p>
-                <a href="#">Ratings</a>
-              </p>
+              
+              <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
               <a href="book.html">
                 <button>Book a Table</button>
               </a>
@@ -203,11 +258,15 @@
         </div>
         </div>
 
+
         </div> <!-- filipino div -->
 
         <div id="japanese" class="row">
 
-          <h1>Japanese Restaurant</h1>
+          <h1>
+            Japanese Restaurant
+            <img src="images/japan.png">
+          </h1>
           <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -218,11 +277,18 @@
             <div class="panel-body">
                <h3>Ise Sueyoshi</h3>
                 <p>4-2-15 Nishiazabu | 3F Mizuno Bldg., Minato 106-0031, Tokyo Prefecture</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -238,11 +304,18 @@
             <div class="panel-body">
                <h3>Engawa</h3>
                 <p>Ham Yard, Soho, London</p><br>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -258,11 +331,18 @@
             <div class="panel-body">
                <h3>The Araki</h3>
                 <p>12 New Burlington Street, London W1S 3BH, United Kingdom</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+               
+               <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -275,7 +355,10 @@
         </div> <!-- Japanese Div -->
 
         <div id="chinese" class="row">
-          <h1>Chinese Restaurant</h1>
+          <h1>
+            Chinese Restaurant
+            <img src="images/china.png">
+          </h1>
           <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -286,11 +369,18 @@
             <div class="panel-body">
                <h3>Tim Ho Wan</h3>
                 <p>Upper Ground Floor, SM Megamall</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+               
+               <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -306,11 +396,18 @@
             <div class="panel-body">
                <h3>Peking Garden</h3>
                 <p>Greenbelt 5, Makati City</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul> 
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -326,11 +423,18 @@
             <div class="panel-body">
                <h3>Choi Garden</h3>
                 <p>2/F Atrium, SM Megamall</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -342,7 +446,10 @@
         </div> <!-- Chinese Div -->
 
         <div id="korean" class="row">
-          <h1>Korean Restaurant</h1>
+          <h1>
+            Korean Restaurant
+            <img src="images/korea.png">
+          </h1>
           <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -353,11 +460,18 @@
             <div class="panel-body">
                <h3>Jung Sik Dang</h3>
                 <p>11, Seolleung-ro 158-gil, Gangnam-gu, Seoul 06014, South Korea</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -373,11 +487,18 @@
             <div class="panel-body">
                <h3>Song Juk Heon</h3>
                 <p>37-2, Unni-dong, Jongno-gu, Seoul, South <br>Korea</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul> 
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -393,11 +514,18 @@
             <div class="panel-body">
                <h3>Yong Su San</h3>
                 <p>84, Taepyeongno 1(il)-ga, Jung-gu, Seoul, South Korea</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                <li>Ratings</li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -409,7 +537,10 @@
         </div> <!-- Korean Div -->
 
         <div id="indian" class="row">
-          <h1>Indian Restaurant</h1>
+          <h1>
+            Indian Restaurant
+            <img src="images/india.png">
+          </h1>
           <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -420,11 +551,18 @@
             <div class="panel-body">
                <h3>Little India Healthy Cuisine</h3>
                 <p>24-F, 2nd Floor, Malingap St. Teachers Village, Diliman, Quezon City, 1101 Metro Manila</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul> 
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -440,11 +578,16 @@
             <div class="panel-body">
                <h3>Legend of India</h3>
                 <p>114B Jupiter Street, Bel-Air II, Makati, 1209 Metro Manila, Philippines</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -457,7 +600,10 @@
 
         <div id="thai" class="row">
 
-          <h1>Thai Restaurant</h1>
+          <h1>
+            Thai Restaurant
+            <img src="images/thai.png">
+          </h1>
           <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -467,12 +613,17 @@
             </div>
             <div class="panel-body">
                <h3>Basil</h3>
-                <p>Katipunan Avenue corner White Plains, Quezon City</p><br>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>Katipunan Avenue corner White Plains, Quezon City</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -488,11 +639,16 @@
             <div class="panel-body">
                <h3>Nav Modern Thai</h3>
                 <p>16C United Street, Kapitolyo, Pasig City</p><br>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -508,11 +664,16 @@
             <div class="panel-body">
                <h3>Thaipan</h3>
                 <p>120 Scout Lazcano Street, Tomas Morato, Quezon City</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -526,7 +687,10 @@
 
       <div id="european">
         <div id="spanish" class="row">
-         <h1>Spanish Restaurant</h1>
+         <h1>
+          Spanish Restaurant
+          <img src="images/spain.png">
+         </h1>
           <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -537,11 +701,18 @@
             <div class="panel-body">
                <h3>Alba Restaurante Español</h3>
                 <p>Tomas Morato corner Scout Lozano, Quezon City</p><br>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -557,11 +728,18 @@
             <div class="panel-body">
                <h3>VASK Tapas Room</h3>
                 <p>Fifth Floor, Clipp Center, 11th Avenue Corner 39th Street, BGC, Taguig City</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -577,11 +755,18 @@
             <div class="panel-body">
                <h3>Mario's</h3>
                 <p>191 Tomas Morato Avenue Corner Scout Gandia Street, Tomas Morato, Quezon City</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -592,7 +777,10 @@
         </div> <!-- Spanish Div -->
 
         <div id="italian" class="row">
-          <h1>Italian Restaurant</h1>
+          <h1>
+            Italian Restaurant
+            <img src="images/italy.png">
+          </h1>
           <hr>
 
         <div class="col-md-4 col-sm-4">
@@ -603,11 +791,18 @@
             <div class="panel-body">
                <h3>Club del Doge Restaurant</h3>
                 <p>Campo Santa Maria del Giglio, 2467, 30124 Venezia, Italy</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -623,11 +818,18 @@
             <div class="panel-body">
                <h3>Da Vittorio (Brusaporto)</h3>
                 <p>Via Cantalupa, 17, 24060 Brusaporto BG, Italy</p><br>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -643,11 +845,18 @@
             <div class="panel-body">
                <h3>Dal Pescatore (Runate)</h3>
                 <p>Località Runate, 15, 46013 Canneto Sull'oglio MN, Italy</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -658,7 +867,10 @@
         </div> <!-- Italian Div -->
 
         <div id="french" class="row">
-          <h1>French Restaurant</h1>
+          <h1>
+            French Restaurant
+            <img src="images/france.png">
+          </h1>
           <hr>
           
         <div class="col-md-4 col-sm-4">
@@ -669,11 +881,18 @@
             <div class="panel-body">
                <h3>Mirazur</h3>
                 <p>30 Avenue Aristide Briand, 06500 Menton, France</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -689,11 +908,18 @@
             <div class="panel-body">
                <h3>L’Arpège</h3>
                 <p>84 Rue de Varenne, 75007 Paris, France</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -709,11 +935,18 @@
             <div class="panel-body">
                <h3>Le Chateaubriand</h3>
                 <p>129 Avenue Parmentier, 75011 Paris, France</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -729,7 +962,7 @@
         <h1>Buffet</h1>
         <hr>
 
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4" id="vikings">
           <div class="panel panel-default">
             <div class="panel-heading">
               <img src="images/vikings1.jpg">
@@ -737,11 +970,18 @@
             <div class="panel-body">
                <h3>Vikings</h3>
                 <p>Upper Ground Floor, SM Megamall</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -749,7 +989,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4" id="yakimix">
           <div class="panel panel-default">
             <div class="panel-heading">
               <img src="images/yakimix1.jpg">
@@ -757,11 +997,18 @@
             <div class="panel-body">
                <h3>Yakimix</h3>
                 <p>3rd Floor, The Podium</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -769,7 +1016,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4 col-sm-4" id="dads">
           <div class="panel panel-default">
             <div class="panel-heading">
               <img src="images/dads1.jpg">
@@ -777,11 +1024,18 @@
             <div class="panel-body">
                <h3>Dads Kamayan</h3>
                 <p>3rd Floor, Mega B, SM Megamall</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -792,7 +1046,10 @@
       </div> <!-- Buffet -->
 
       <div id="american" class="row">
-        <h1>American Restaurant</h1>
+        <h1>
+          American Restaurant
+          <img src="images/america.png">
+        </h1>
         <hr>
         
         <div class="col-md-4 col-sm-4">
@@ -803,11 +1060,18 @@
             <div class="panel-body">
                <h3>Gotham Bar And Grill</h3>
                 <p>12 E 12th St, New York, NY 10003, USA</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -823,11 +1087,18 @@
             <div class="panel-body">
                <h3>Tocqueville</h3>
                 <p>1 East 15th Street, New York, NY 10003, USA</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -843,11 +1114,18 @@
             <div class="panel-body">
                <h3>Gramercy Tavern</h3>
                 <p>42 East 20th Street, New York, NY 10003, USA</p>
-                <p>9AM-10PM (Sat-Sun)</p>
+                <p>9AM-10PM (Sun-Sat)</p>
                 <p><strong>Food Range: 1000++</strong></p>
-                <p>
-                  <a href="#">Ratings</a>
-                </p>
+                
+                <ul>
+                  <li>Ratings</li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                  <li><input type="radio"></li>
+                </ul>
+
                 <a href="book.html">
                   <button>Book a Table</button>
                 </a>
@@ -858,35 +1136,40 @@
       </div> <!-- American Div -->
 
     </div>  <!-- Last Div -->
-    <footer class="row">
-      <div class="social col-md-6" style="float: left;">
-        <ul>
 
-          <li>
-            <a href="#"> <img src="images/fb.svg"></a>
-          </li>
+    <hr>
+    <footer class="container">
+    <div class="container-fluid row">
+        <div class="col-md-12">
+          <span>Copyright &copy 2017. All rights reserved.</span>
+        </div>
 
-          <li>
-            <a href="#"><img src="images/tweet.svg"></a>
-          </li>
+        <div class="social col-md-12">
+          <ul>
 
-          <li>
-            <a href="#"><img src="images/google.svg"></a>
-          </li>
+            <li>
+              <a href="#"> <img src="images/fb.svg"></a>
+            </li>
 
-          <li>
-            <a href="#"><img src="images/pinterest.svg"></a>
-          </li>
+            <li>
+              <a href="#"><img src="images/tweet.svg"></a>
+            </li>
 
-          <li>
-            <a href="#"><img src="images/tumblr.svg"></a>
-          </li>
+            <li>
+              <a href="#"><img src="images/google.svg"></a>
+            </li>
 
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <span>Copyright &copy 2017. All rights reserved.</span>
-      </div>
+            <li>
+              <a href="#"><img src="images/pinterest.svg"></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="images/tumblr.svg"></a>
+            </li>
+
+          </ul>
+        </div>
+    </div>
 
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

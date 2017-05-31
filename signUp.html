@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>BookEatList</title>
+
+    <link rel="icon" type="images" href="images/logo.jpg" sizes="20x20">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +39,7 @@
       text-align: left;
       width: 500px;
     }
-    .signUp{
+    .sign-up{
       width: 100%;
       height: 50px;
       background: #3897f0;
@@ -47,15 +49,13 @@
       width: 100%;
       height: 40px;
       border-radius: 10px;
+      text-align: center;
     }
     .container > form > ul > li > p, h1{
       text-align: center;
     }
     .account{
       text-align: center;
-    }
-    .logInForm{
-      display: none;
     }
     .social > ul > li  {
       list-style-type: none;
@@ -65,13 +65,24 @@
     }
     .row > div > ul > li{
       list-style-type: none;
+      padding-left: ;
+    }
+    .row > div{
+      text-align: center;
     }
     footer{
       margin-bottom: 0;
-      background: rgba(254,254,254,0.1);
+      background: rgba(255,255,255,0.5);
       width: 100%;
-      padding-top: 10px;
     }
+    .navbar-brand > span{
+      font-family: verdana;
+      color: black;
+      font-weight: bold;
+   }
+   form{
+    margin-bottom: 28vh;
+   }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
@@ -85,7 +96,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand">BookEatList</a>
+            <a href="index.html" class="navbar-brand"><span>BookEatList</span></a>
           </div>
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
             <ul class="nav navbar-nav navbar-left" id="nav">
@@ -111,7 +122,7 @@
               <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" id="nav">
-              <li><a href="signUp.html#logInAccountId" class="logInAccount">Log In</a></li>
+              <li><a href="login.html">Log In</a></li>
               <li><a href="signUp.html">Sign Up</a></li>
             </ul>
           </div>
@@ -120,10 +131,10 @@
     </header>
     <div class="container-fluid" style="text-align: center;">
       <div class="container" style="width: 500px;">
-        <form class="signUpForm">
+        <form>
          <ul>
            <li>
-             <h1>Sign up to reserve online your favorite restaurant</h1>
+             <h1>Sign up to reserve your favorite restaurant</h1>
            </li>
            <li>
              <input type="text" placeholder="Full Name">
@@ -132,90 +143,63 @@
              <input type="email" placeholder="Email">
            </li>
            <li>
+             <input type="number" placeholder="Mobile Number">
+           </li>
+           <li>
              <input type="password" placeholder="Password">
            </li>
          </ul>
          <ul>
            <li>
-             <button class="signUp">Sign Up</button>
+             <button class="sign-up">Sign Up</button>
            </li>
            <li>
-            <p>By signing up, you agree to our <a href="#">Terms & Privacy Policy.</a></p>
+            <p>By signing up, you agree to our <a href="signUp.html">Terms & Privacy Policy.</a></p>
            </li>
            <li class="account">
-            Have an Account? <a href="#" class="logInAccount" id="logInAccountId">Log In</a>
+            Have an Account? <a href="login.html">Log In</a>
            </li>
          </ul>
         </form>
-        <form class="logInForm">
-          <ul>
-            <li>
-              <h1>Log In and reserve your fave resto</h1>
-            </li>
-            <li>
-              <input type="email" placeholder="Email">
-            </li>
-            <li>
-              <input type="password" placeholder="Password">
-            </li>
-            <li>
-              <button class="signUp">Log In</button>
-            </li>
-            <li class="account">
-              Don't have an account? <a href="#" class="signUpAccount">Sign Up</a>
-            </li>
-          </ul>
-        </form>
+
       </div> <!-- container --> 
     </div> <!-- container-fluid --> 
-    <footer class="row">
-      <div class="social col-md-6" style="float: left;">
-        <ul>
 
-          <li>
-            <a href="#"> <img src="images/fb.svg"></a>
-          </li>
+    <hr>
+    <footer class="container">
+    <div class="container-fluid row">
+        <div class="col-md-12">
+          <span>Copyright &copy 2017. All rights reserved.</span>
+        </div>
 
-          <li>
-            <a href="#"><img src="images/tweet.svg"></a>
-          </li>
+        <div class="social col-md-12">
+          <ul>
 
-          <li>
-            <a href="#"><img src="images/google.svg"></a>
-          </li>
+            <li>
+              <a href="#"> <img src="images/fb.svg"></a>
+            </li>
 
-          <li>
-            <a href="#"><img src="images/pinterest.svg"></a>
-          </li>
+            <li>
+              <a href="#"><img src="images/tweet.svg"></a>
+            </li>
 
-          <li>
-            <a href="#"><img src="images/tumblr.svg"></a>
-          </li>
+            <li>
+              <a href="#"><img src="images/google.svg"></a>
+            </li>
 
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <span>Copyright &copy 2017. All rights reserved.</span>
-      </div>
+            <li>
+              <a href="#"><img src="images/pinterest.svg"></a>
+            </li>
+
+            <li>
+              <a href="#"><img src="images/tumblr.svg"></a>
+            </li>
+
+          </ul>
+        </div>
+    </div>
 
     </footer>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        // $(".logInForm").hide();
-        $("#logInAccountId").click(function(){
-          $(".signUpForm").hide();
-          $(".logInForm").show();
-        });
-        $(".logInAccount").click(function(){
-          $(".signUpForm").hide();
-          $(".logInForm").show();
-        });
-        $(".signUpAccount").click(function(){
-          $(".signUpForm").show();
-          $(".logInForm").hide();
-        });
-      });
-    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
