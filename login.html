@@ -30,16 +30,14 @@
     }
     .container > form > ul > li{
       margin-bottom: 10px;
-      width: 500px;
     }
     .container > form > ul{
       list-style-type: none;
       margin-bottom: 50px;
       text-align: left;
-      width: 500px;
     }
     .container > form > ul > li > input{
-      width: 100%;
+      width: 50%;
       height: 40px;
       border-radius: 10px;
     }
@@ -50,7 +48,7 @@
       text-align: center;
     }
     .log-In{
-      width: 100%;
+      width: 50%;
       height: 50px;
       background: #3897f0;
       border-radius: 10px;
@@ -80,6 +78,9 @@
    form{
     margin-bottom: 47vh;
    }
+   form > ul > li{
+    text-align: center;
+   }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
@@ -108,7 +109,7 @@
                 </ul>
               </li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#european">European Cuisine<span class="caret"></span></a>
-                <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                   <li><a href="cuisine.html#spanish">Spanish</a></li>
                   <li><a href="cuisine.html#italian">Italian</a></li>
                   <li><a href="cuisine.html#french">French</a></li>
@@ -117,43 +118,42 @@
               <li><a href="cuisine.html#buffet">Buffets</a></li>
               <li><a href="cuisine.html#american">American Cuisine</a></li>
               <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" id="nav">
-              <li><a href="login.html" class="logInAccount">Log In</a></li>
+              <li><a href="login.html">Log In</a></li>
               <li><a href="signUp.html">Sign Up</a></li>
             </ul>
+            
           </div>
         </div>
       </nav>
     </header>
-    <div class="container-fluid" style="text-align: center;">
-      <div class="container" style="width: 500px;">
-        <form>
-          <ul>
-            <li>
-              <h1>Log In and reserve your restaurant</h1>
-            </li>
-            <li>
-              <input type="email" placeholder="Email">
-            </li>
-            <li>
-              <input type="password" placeholder="Password">
-            </li>
-            <li>
-              <button class="log-In">Log In</button>
-            </li>
-            <li class="account">
-              Don't have an account? <a href="signUp.html">Sign Up</a>
-            </li>
-          </ul>
-        </form>
+    <div class="container-fluid">
+      <div class="container row center-block">
+      <form class="col-md-12 col-sm-12">
+        <ul>
+          <li>
+            <h1>Log In and reserve your restaurant</h1>
+          </li>
+          <li>
+            <input type="email" placeholder="Email">
+          </li>
+          <li>
+            <input type="password" placeholder="Password">
+          </li>
+          <li>
+            <button class="log-In">Log In</button>
+          </li>
+          <li class="account">
+            Don't have an account? <a href="signUp.html">Sign Up</a>
+          </li>
+        </ul>
+      </form>
       </div> <!-- container --> 
     </div> <!-- container-fluid --> 
 
     <hr>
     <footer class="container">
     <div class="container-fluid row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12 center-block">
           <span>Copyright &copy 2017. All rights reserved.</span>
         </div>
 

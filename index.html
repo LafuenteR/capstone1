@@ -18,6 +18,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
+    html, body{
+      overflow-x: hidden;
+    }
     ul li:hover ul{
       display: block;
     }
@@ -30,7 +33,7 @@
     }
     .carousel-inner > .item > a > img{
       width: 100%;
-      height: 80vh;
+      height: 50vh;
     }
    
     h1{
@@ -46,7 +49,11 @@
     .row > div > ul > li{
       list-style-type: none;
     }
-    .row > div{
+    .row > div, 
+    h4, 
+    p,
+    h3,
+    .panel-body{
       text-align: center;
     }
     footer{
@@ -70,10 +77,27 @@
       color: black;
       font-weight: bold;
    }
-
+  .panel-heading > img{
+    height: 200px;
+  }
+  @media screen and (max-width: 1000px) and (min-width: 700px) {
+    .navbar-header{
+      margin-left: 15px;
+    }
+  }
+  @media screen and (max-width: 699px) and (min-width: 520px) {
+    .navbar-header{
+      margin-left: 15px;
+    }
+  }
+  @media screen and (max-width: 519px)  {
+    .navbar-header{
+      margin-left: 15px;
+    }
+  }
   </style>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body>
     <header class="container-fluid" style="padding: 0;">
       <nav class="navbar navbar-default">
         <div class="container">
@@ -107,11 +131,10 @@
               <li><a href="cuisine.html#buffet">Buffets</a></li>
               <li><a href="cuisine.html#american">American Cuisine</a></li>
               <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" id="nav">
               <li><a href="login.html">Log In</a></li>
               <li><a href="signUp.html">Sign Up</a></li>
             </ul>
+          
           </div>
         </div>
       </nav>
@@ -168,15 +191,54 @@
     </div> <!-- #myCarousel -->
     <div class="container">
       <div class="container-fluid row">
-        <div class="col-md-1">
+        <div class="col-md-1 col-sm-1">
           <img src="images/clock.jpg">
         </div>
-        <div class="col-md-11">
+        <div class="col-md-11 col-sm-11">
           <h1 class="text-warning">Friendly Reminder!</h1>
           <p>Table will only be held for 30 mins after booking time. Bookings not guaranteed for late arrivals.</p>
+   
         </div>
-      </div>
-    </div>
+     </div> <!-- Container-fluid -->
+     <hr>
+</div> <!-- Container -->
+
+    <div class="container">
+      <div class="container-fluid">
+        <div class="col-md-3 col-sm-6">
+        <h4>Most Rated Restaurant today</h4>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img width="100%;" src="images/sentro1771.jpg">
+          </div>
+          <div class="panel-body">
+             <h3>Sentro 1771</h3>
+              <p style="text-align: center;">Greenbelt 3, Ayala Center, Makati City</p>
+              <a href="cuisine.html#filipino">
+                <button>Check it out</button>
+              </a>
+          </div>
+        </div>
+        </div>
+         <div class="col-md-3 col-sm-6">
+        <h4>Online Delivery Soon</h4>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img width="100%;" src="images/delivery.png">
+          </div>
+          <div class="panel-body">
+             <h3>Online Delivery Soon</h3><br>
+             
+              <button class="btn btn-default">Online Delivery</button>
+             
+          </div>
+        </div>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <h3>For More questions <a href="mailto:lafuente1101403@ceu.edu.ph">Click Here</a></h3>
+        </div>
+      </div> <!-- Container-fluid -->
+    </div> <!-- Container -->
     <hr>
     <footer class="container">
 

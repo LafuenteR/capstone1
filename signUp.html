@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>BookEatList</title>
-
     <link rel="icon" type="images" href="images/logo.jpg" sizes="20x20">
 
     <!-- Bootstrap -->
@@ -31,31 +30,28 @@
     }
     .container > form > ul > li{
       margin-bottom: 10px;
-      width: 500px;
     }
     .container > form > ul{
       list-style-type: none;
       margin-bottom: 50px;
       text-align: left;
-      width: 500px;
-    }
-    .sign-up{
-      width: 100%;
-      height: 50px;
-      background: #3897f0;
-      border-radius: 10px;
     }
     .container > form > ul > li > input{
-      width: 100%;
+      width: 50%;
       height: 40px;
       border-radius: 10px;
-      text-align: center;
     }
     .container > form > ul > li > p, h1{
       text-align: center;
     }
     .account{
       text-align: center;
+    }
+    .sign-up{
+      width: 50%;
+      height: 50px;
+      background: #3897f0;
+      border-radius: 10px;
     }
     .social > ul > li  {
       list-style-type: none;
@@ -65,7 +61,6 @@
     }
     .row > div > ul > li{
       list-style-type: none;
-      padding-left: ;
     }
     .row > div{
       text-align: center;
@@ -75,13 +70,16 @@
       background: rgba(255,255,255,0.5);
       width: 100%;
     }
-    .navbar-brand > span{
+   .navbar-brand > span{
       font-family: verdana;
       color: black;
       font-weight: bold;
    }
    form{
-    margin-bottom: 28vh;
+    margin-bottom: 47vh;
+   }
+   form > ul > li{
+    text-align: center;
    }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -111,7 +109,7 @@
                 </ul>
               </li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#european">European Cuisine<span class="caret"></span></a>
-                <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                   <li><a href="cuisine.html#spanish">Spanish</a></li>
                   <li><a href="cuisine.html#italian">Italian</a></li>
                   <li><a href="cuisine.html#french">French</a></li>
@@ -120,21 +118,20 @@
               <li><a href="cuisine.html#buffet">Buffets</a></li>
               <li><a href="cuisine.html#american">American Cuisine</a></li>
               <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" id="nav">
               <li><a href="login.html">Log In</a></li>
               <li><a href="signUp.html">Sign Up</a></li>
             </ul>
+            
           </div>
         </div>
       </nav>
     </header>
-    <div class="container-fluid" style="text-align: center;">
-      <div class="container" style="width: 500px;">
-        <form>
+    <div class="container-fluid">
+      <div class="container row center-block">
+      <form class="col-md-12 col-sm12">
          <ul>
            <li>
-             <h1>Sign up to reserve your favorite restaurant</h1>
+             <h1><strong>Sign up to reserve your favorite restaurant</strong></h1>
            </li>
            <li>
              <input type="text" placeholder="Full Name">
@@ -148,8 +145,6 @@
            <li>
              <input type="password" placeholder="Password">
            </li>
-         </ul>
-         <ul>
            <li>
              <button class="sign-up">Sign Up</button>
            </li>
@@ -161,14 +156,13 @@
            </li>
          </ul>
         </form>
-
       </div> <!-- container --> 
     </div> <!-- container-fluid --> 
 
     <hr>
     <footer class="container">
     <div class="container-fluid row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12">
           <span>Copyright &copy 2017. All rights reserved.</span>
         </div>
 
@@ -206,8 +200,6 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
 
 
 
