@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>BookEatList</title>
     <link rel="icon" type="images" href="images/logo.jpg" sizes="20x20">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,141 +17,146 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  <style type="text/css">
-    html, 
-    body{
+    <style type="text/css">
+      html, 
+      body{
         overflow-x: hidden;
-    }
+      }
 
-    ul li:hover ul{
-      display: block;
-    }
+      ul li:hover ul{
+        display: block;
+      }
 
-    .affix{
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
+      .dropdown-menu{
+        background: rgba(255,255,255,0.5);
+      }
 
+      header > .navbar{
+        background: rgba(255,255,255,0.9);
+        width: 100%;
+      }
+
+      .carousel-inner > .item > a > img{
+        width: 100%;
+        height: 50vh;
+      }
+     
+      h1{
+        color: black;
+      }
+
+      .social > ul > li  {
+        list-style-type: none;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+      }
+
+      .row > div > ul > li{
+        list-style-type: none;
+      }
+
+      .row > div, 
+      h4, 
+      p,
+      h3,
+      .panel-body{
+        text-align: center;
+      }
+
+      footer{
+        margin-bottom: 0;
+        background: rgba(255,255,255,0.5);
+        width: 100%;
+      }
+
+      .navbar-default{
+       margin-bottom: 0px;
+      }
+
+      .col-md-1 > img{
+        padding-top: 10px;
+        width: 100%;
+        height: 100%;
+      }
+
+       .col-md-11 > h1, p{
+        text-align: left;
+      }
+
+       .navbar-brand > span{
+          font-family: verdana;
+          color: black;
+          font-weight: bold;
+      }
+
+      .panel-heading > img{
+        height: 200px;
+      }
+
+      .affix{
+        width: 100%;
+        z-index: 1;
+      }
+
+      .panel-body > ul > li > input:hover{
+        opacity: 0.5;
+      }
+
+      .panel-body > ul{
+       list-style: none;
+       -webkit-padding-start: 0px;
+      }
+
+      .panel-body > ul > li > input{
+      text-align: left;
+      padding-left: 0px;
+      }
+
+      .panel-heading > img, .panel-body > a > button{
+        box-sizing: border-box;
+      }
+
+      .panel-body > ul > li{
+        display: inline-block;
+        list-style-type: none;
+      }
+       
+      .navbar-brand > span{
+          font-family: verdana;
+          color: black;
+          font-weight: bold;
+      }
+      button{
+        background: #3897f0;
+        border-radius: 10px;
+        color: black;
+        width: 100%;
+        height: 40px;
+      }
+    /*  .panel-heading{
+      text-align: center;
+
+    }
+    .panel-body{
+      text-align: left;
+    }
+      }
     .row > div > div > ul > li{
       list-style-type: none;
     }
-
     .panel-heading > img{
       width: 100%;
       height: 200px;
     }
-
     .panel-heading > img:hover {
      opacity: 0.9;
-    }
+    }*/
 
-    .panel-heading{
-      text-align: center;
-    }
-
-    .panel-body{
-      text-align: left;
-    }
-
-    p{
-      text-align: left;
-    }
-
-    .social > ul > li  {
-      list-style-type: none;
-      height: 30px;
-      width: 30px;
-      display: inline-block;
-    }
-
-    .row > div > ul > li{
-      list-style-type: none;
-    }
-
-    .row > div{
-        text-align: center;
-    }
-    h1{
-      color: rgb(70,70,70);
-      font-family: Georgia, serif;
-    }
-    footer{
-      margin-bottom: 0;
-      background: rgba(255,255,255,0.5);
-      width: 100%;
-    }  
-
-    .button{
-      background: #3897f0;
-      border-radius: 10px;
-      color: black;
-      width: 100%;
-      height: 40px;
-    }
-
-     .navbar-brand > span{
-        font-family: verdana;
-        color: black;
-        font-weight: bold;
-    }
-
-    .panel-body > ul > li{
-      display: inline-block;
-      list-style-type: none;
-    }
-
-     .panel-heading > img, .panel-body > a > button{
-      box-sizing: border-box;
-     }
-
-     .panel-body > ul > li > input{
-      text-align: left;
-      padding-left: 0px;
-     }
-
-     .panel-body > ul{
-     list-style: none;
-     -webkit-padding-start: 0px;
-     }
-
-     h3{
-      text-align: center;
-     }
-
-     .panel-body > ul > li > input:hover{
-      opacity: 0.5;
-     }
-    @media (max-width: 998px) {
-      .navbar-header {
-          float: none;
-      }
-      .navbar-toggle {
-          display: block;
-      }
-      .navbar-collapse {
-          border-top: 1px solid transparent;
-          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-      }
-      .navbar-collapse.collapse {
-          display: none!important;
-      }
-      .navbar-nav {
-          float: none!important;
-          margin: 7.5px -15px;
-      }
-      .navbar-nav>li {
-          float: none;
-      }
-      .navbar-nav>li>a {
-          padding-top: 10px;
-          padding-bottom: 10px;
-      }
-    }
-  </style>
+    </style>
   </head>
   <body>
-     <header class="container-fluid" style="padding: 0;">
+    <header class="container-fluid" style="padding: 0;">
       <nav class="navbar navbar-default" data-spy="affix" data-offset="197">
         <div class="container">
 
@@ -161,196 +167,155 @@
               <span class="icon-bar"></span>
             </button>
             <a href="index.html" class="navbar-brand"><span>BookEatList</span></a>
-          </div>
+          </div> <!--.navbar-header -->
 
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right" id="nav">
-              <li class="dropdown">
-                <a href="cuisine.html#asian" class="dropdown-toggle" data-toggle="dropdown">Asian Cuisine<span class="caret"></span></a>
+          
+            <ul class="nav navbar-nav navbar-left" id="nav">
+              <li class="dropdown"><a href="cuisine.html#asian" class="dropdown-toggle" data-toggle="dropdown">Asian Cuisine<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a href="cuisine.html#filipino">Filipino</a>
-                  </li> 
-
-                  <li>
-                    <a href="cuisine.html#japanese">Japanese</a>
-                  </li>
-
-                  <li>
-                    <a href="cuisine.html#chinese">Chinese</a>
-                  </li>
-
-                  <li>
-                    <a href="cuisine.html#korean">Korean</a>
-                  </li>
-
-                  <li>
-                   <a href="cuisine.html#indian">Indian</a>
-                  </li>
-
-                  <li>
-                    <a href="cuisine.html#thai">Thai</a>
-                  </li>
-
+                  <li><a href="cuisine.html#filipino">Filipino</a></li>
+                  <li><a href="cuisine.html#japanese">Japanese</a></li>
+                  <li><a href="cuisine.html#chinese">Chinese</a></li>
+                  <li><a href="cuisine.html#korean">Korean</a></li>
+                  <li><a href="cuisine.html#indian">Indian</a></li>
+                  <li><a href="cuisine.html#thai">Thai</a></li>
                 </ul>
               </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#european">European Cuisine<span class="caret"></span></a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#european">European Cuisine<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-
-                  <li>
-                    <a href="cuisine.html#spanish">Spanish</a>
-                  </li>
-
-                  <li>
-                    <a href="cuisine.html#italian">Italian</a>
-                  </li>
-
-                  <li>
-                    <a href="cuisine.html#french">French</a>
-                  </li>
-
+                  <li><a href="cuisine.html#spanish">Spanish</a></li>
+                  <li><a href="cuisine.html#italian">Italian</a></li>
+                  <li><a href="cuisine.html#french">French</a></li>
                 </ul>
               </li>
-
-              <li>
-                <a href="cuisine.html#buffet">Buffets</a>
-              </li>
-
-              <li>
-                <a href="cuisine.html#american">American Cuisine</a>
-              </li>
-
-              <li>
-               <a href="login.html">Log In</a>
-              </li>
-
-              <li>
-                <a href="signUp.html">Sign Up</a>
-              </li>
+              <li><a href="cuisine.html#buffet">Buffets</a></li>
+              <li><a href="cuisine.html#american">American Cuisine</a></li>
+              <li><a href="login.html">Log In</a></li>
+              <li><a href="signUp.html">Sign Up</a></li>
             </ul>
           
           </div> <!--#myNavbar -->
-        </div> <!--container -->
+        </div> <!--.container -->
       </nav>
     </header>
-    <div class="container">
+        <div class="container">
       <div id="asian">
         <div id="filipino" class="row">
-          <h1>
-            Filipino Restaurant
-            <img src="images/ph.png">
-          </h1>
-          
-          <hr>
+        <h1>
+          Filipino Restaurant
+          <img src="images/ph.png">
+        </h1>
+        
+        <hr>
 
-          <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <img src="images/sentro1771.jpg">
-            </div>
-            <div class="panel-body">
-               <h3>Sentro 1771</h3>
-                <p>Greenbelt 3, Ayala Center, Makati City</p>
-                <p>9AM-10PM (Sun-Sat)</p>
-                <p><strong>Food Range:</strong> Php1000</p>
+        <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="images/sentro1771.jpg">
+          </div>
+          <div class="panel-body">
+             <h3>Sentro 1771</h3>
+              <p>Greenbelt 3, Ayala Center, Makati City</p>
+              <p>9AM-10PM (Sun-Sat)</p>
+              <p><strong>Food Range:</strong> Php1000</p>
+              
+              <ul>
+                <li><strong>Ratings &nbsp</strong></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
                 
-                <ul>
-                  <li><strong>Ratings &nbsp</strong></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                </ul>
-                  
-                <a href="book.html">
-                  <button class="button">Book a Table</button>
-                </a>
-            </div>
+              <a href="book.html">
+                <button class="button">Book a Table</button>
+              </a>
           </div>
-          </div>
+        </div>
+        </div>
 
-          <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <img src="images/cafeJuanita.jpg">
-            </div>
-            <div class="panel-body">
-               <h3>Cafe Juanita</h3>
-                <p>United Street, Pasig City</p>
-                <p>9AM-10PM (Sun-Sat)</p>
-                <p><strong>Food Range:</strong> Php1000</p>
-                
-                <ul>
-                  <li><strong>Ratings &nbsp</strong></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                </ul>
+        <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="images/cafeJuanita.jpg">
+          </div>
+          <div class="panel-body">
+             <h3>Cafe Juanita</h3>
+              <p>United Street, Pasig City</p>
+              <p>9AM-10PM (Sun-Sat)</p>
+              <p><strong>Food Range:</strong> Php1000</p>
+              
+              <ul>
+                <li><strong>Ratings &nbsp</strong></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
 
-                <a href="book.html">
-                  <button class="button">Book a Table</button>
-                </a>
-            </div>
+              <a href="book.html">
+                <button class="button">Book a Table</button>
+              </a>
           </div>
-          </div>
+        </div>
+        </div>
 
-          <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <img src="images/woodenspoon.jpg">
-            </div>
-            <div class="panel-body">
-               <h3>Wooden Spoon</h3>
-                <p>Katipunan Avenue, Quezon City</p>
-                <p>9AM-10PM (Sun-Sat)</p>
-                <p><strong>Food Range:</strong> Php1000</p>
-                
-                <ul>
-                  <li><strong>Ratings &nbsp</strong></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                </ul>
+        <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="images/woodenspoon.jpg">
+          </div>
+          <div class="panel-body">
+             <h3>Wooden Spoon</h3>
+              <p>Katipunan Avenue, Quezon City</p>
+              <p>9AM-10PM (Sun-Sat)</p>
+              <p><strong>Food Range:</strong> Php1000</p>
+              
+              <ul>
+                <li><strong>Ratings &nbsp</strong></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
 
-                <a href="book.html">
-                  <button class="button">Book a Table</button>
-                </a>
-            </div>
+              <a href="book.html">
+                <button class="button">Book a Table</button>
+              </a>
           </div>
-          </div>
+        </div>
+        </div>
 
-          <div class="col-md-4 col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <img src="images/kabila.jpg">
-            </div>
-            <div class="panel-body">
-               <h3>Kabila</h3>
-                <p>Museum Cafe, Ayala Museum Complex, Greenbelt 4, Makati City</p>
-                <p>9AM-10PM (Sun-Sat)</p>
-                <p><strong>Food Range:</strong> Php1000</p>
-                
-                <ul>
-                  <li><strong>Ratings &nbsp</strong></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                  <li><input type="radio"></li>
-                </ul>
+        <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="images/kabila.jpg">
+          </div>
+          <div class="panel-body">
+             <h3>Kabila</h3>
+              <p>Museum Cafe, Ayala Museum Complex, Greenbelt 4, Makati City</p>
+              <p>9AM-10PM (Sun-Sat)</p>
+              <p><strong>Food Range:</strong> Php1000</p>
+              
+              <ul>
+                <li><strong>Ratings &nbsp</strong></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+                <li><input type="radio"></li>
+              </ul>
 
-                <a href="book.html">
-                  <button class="button">Book a Table</button>
-                </a>
-            </div>
+              <a href="book.html">
+                <button class="button">Book a Table</button>
+              </a>
           </div>
-          </div>
+        </div>
+        </div>
 
 
         </div> <!-- filipino div -->
@@ -567,7 +532,7 @@
               </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -594,7 +559,7 @@
               </ul> 
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -621,7 +586,7 @@
               </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -658,7 +623,7 @@
                 </ul> 
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -683,7 +648,7 @@
                   <li><input type="radio"></li>
                 </ul>
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -719,7 +684,7 @@
                   <li><input type="radio"></li>
                 </ul>
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -744,7 +709,7 @@
                   <li><input type="radio"></li>
                 </ul>
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -769,7 +734,7 @@
                   <li><input type="radio"></li>
                 </ul>
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -808,7 +773,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -835,7 +800,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -862,7 +827,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -898,7 +863,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -925,7 +890,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -952,7 +917,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -988,7 +953,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1015,7 +980,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1042,7 +1007,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1077,7 +1042,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1104,7 +1069,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1131,7 +1096,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1167,7 +1132,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1194,7 +1159,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1221,7 +1186,7 @@
                 </ul>
 
                 <a href="book.html">
-                  <button class="button">Book a Table</button>
+                  <button>Book a Table</button>
                 </a>
             </div>
           </div>
@@ -1232,7 +1197,45 @@
     </div>  <!-- Last Div -->
 
     <hr>
+    <div class="container">
+      <div class="container-fluid">
+        <div class="col-md-3 col-sm-6">
+        <h4>Most Rated Restaurant today</h4>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img width="100%;" src="images/sentro1771.jpg">
+          </div>
+          <div class="panel-body">
+             <h3>Sentro 1771</h3>
+              <p style="text-align: center;">Greenbelt 3, Ayala Center, Makati City</p>
+              <a href="cuisine.html#filipino">
+                <button>Check it out</button>
+              </a>
+          </div>
+        </div>
+        </div>
+         <div class="col-md-3 col-sm-6">
+        <h4>Online Delivery Soon</h4>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img width="100%;" src="images/delivery.png">
+          </div>
+          <div class="panel-body">
+             <h3>Online Delivery Soon</h3><br>
+             
+              <button class="btn btn-default">Online Delivery</button>
+             
+          </div>
+        </div>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <h3>For More questions <a href="mailto:lafuente1101403@ceu.edu.ph">Click Here</a></h3>
+        </div>
+      </div> <!-- Container-fluid -->
+    </div> <!-- Container -->
+    <hr>
     <footer class="container">
+
     <div class="container-fluid row">
         <div class="col-md-12">
           <span>Copyright &copy 2017. All rights reserved.</span>
@@ -1250,7 +1253,7 @@
             </li>
 
             <li>
-              <a href="#"><img src="images/Google.svg"></a>
+              <a href="#"><img src="images/google.svg"></a>
             </li>
 
             <li>

@@ -18,83 +18,112 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    html, body{
-      overflow-x: hidden;
+      html, 
+      body{
+        overflow-x: hidden;
+      }
+
+      ul li:hover ul{
+        display: block;
+      }
+
+      .dropdown-menu{
+        background: rgba(255,255,255,0.5);
+      }
+
+      header > .navbar{
+        background: rgba(255,255,255,0.5);
+        width: 100%;
+      }
+
+      .carousel-inner > .item > a > img{
+        width: 100%;
+        height: 50vh;
+      }
+
+      h1{
+        color: black;
+      }
+
+      .social > ul > li  {
+        list-style-type: none;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+      }
+
+      .row > div > ul > li{
+        list-style-type: none;
+      }
+
+      .row > div, 
+      h4, 
+      p,
+      h3,
+      .panel-body{
+        text-align: center;
+      }
+
+      footer{
+        margin-bottom: 0;
+        background: rgba(255,255,255,0.5);
+        width: 100%;
+      }
+
+    .navbar-default{
+     margin-bottom: 0px;
     }
-    ul li:hover ul{
-      display: block;
-    }
-    .dropdown-menu{
-      background: rgba(255,255,255,0.5);
-    }
-    header > .navbar{
-      background: rgba(255,255,255,0.5);
+
+    .col-md-1 > img{
+      padding-top: 10px;
       width: 100%;
+      height: 100%;
     }
-    .carousel-inner > .item > a > img{
-      width: 100%;
-      height: 50vh;
+
+     .col-md-11 > h1, p{
+      text-align: left;
+     }
+
+     .navbar-brand > span{
+        font-family: verdana;
+        color: black;
+        font-weight: bold;
+     }
+
+    .panel-heading > img{
+      height: 200px;
     }
-   
-    h1{
-      /*text-shadow: 2px 2px 4px red;*/
-      color: black;
+
+    @media (max-width: 998px) {
+      .navbar-header {
+          float: none;
+      }
+      .navbar-toggle {
+          display: block;
+      }
+      .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-collapse.collapse {
+          display: none!important;
+      }
+      .navbar-nav {
+          float: none!important;
+          margin: 7.5px -15px;
+      }
+      .navbar-nav>li {
+          float: none;
+      }
+      .navbar-nav>li>a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
     }
-    .social > ul > li  {
-      list-style-type: none;
-      height: 30px;
-      width: 30px;
-      display: inline-block;
+     h1{
+      color: rgb(70,70,70);
+      font-family: Georgia, serif;
     }
-    .row > div > ul > li{
-      list-style-type: none;
-    }
-    .row > div, 
-    h4, 
-    p,
-    h3,
-    .panel-body{
-      text-align: center;
-    }
-    footer{
-      margin-bottom: 0;
-      background: rgba(255,255,255,0.5);
-      width: 100%;
-    }
-  .navbar-default{
-   margin-bottom: 0px;
-  }
-  .col-md-1 > img{
-    padding-top: 10px;
-    width: 100%;
-    height: 100%;
-  }
-   .col-md-11 > h1, p{
-    text-align: left;
-   }
-   .navbar-brand > span{
-      font-family: verdana;
-      color: black;
-      font-weight: bold;
-   }
-  .panel-heading > img{
-    height: 200px;
-  }
-  @media screen and (max-width: 1000px) and (min-width: 700px) {
-    .navbar-header{
-      margin-left: 15px;
-    }
-  }
-  @media screen and (max-width: 699px) and (min-width: 520px) {
-    .navbar-header{
-      margin-left: 15px;
-    }
-  }
-  @media screen and (max-width: 519px)  {
-    .navbar-header{
-      margin-left: 15px;
-    }
-  }
   </style>
   </head>
   <body>
@@ -110,7 +139,7 @@
             <a href="index.html" class="navbar-brand"><span>BookEatList</span></a>
           </div>
           <div class="collapse navbar-collapse dropdown-content" id="myNavbar">
-            <ul class="nav navbar-nav navbar-left" id="nav">
+            <ul class="nav navbar-nav navbar-right" id="nav">
               <li class="dropdown"><a href="cuisine.html#asian" class="dropdown-toggle" data-toggle="dropdown">Asian Cuisine<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="cuisine.html#filipino">Filipino</a></li>
@@ -123,22 +152,44 @@
               </li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisine.html#european">European Cuisine<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="cuisine.html#spanish">Spanish</a></li>
-                  <li><a href="cuisine.html#italian">Italian</a></li>
-                  <li><a href="cuisine.html#french">French</a></li>
+
+                  <li>
+                    <a href="cuisine.html#spanish">Spanish</a>
+                  </li>
+
+                  <li>
+                    <a href="cuisine.html#italian">Italian</a>
+                  </li>
+
+                  <li>
+                    <a href="cuisine.html#french">French</a>
+                  </li>
+
                 </ul>
               </li>
-              <li><a href="cuisine.html#buffet">Buffets</a></li>
-              <li><a href="cuisine.html#american">American Cuisine</a></li>
-              <li><a href="#"><input type="text" name="search" placeholder="Search..."></a></li>
-              <li><a href="login.html">Log In</a></li>
-              <li><a href="signUp.html">Sign Up</a></li>
+
+              <li>
+                <a href="cuisine.html#buffet">Buffets</a>
+              </li>
+
+              <li>
+                <a href="cuisine.html#american">American Cuisine</a>
+              </li>
+
+              <li>
+                <a href="login.html">Log In</a>
+              </li>
+
+              <li>
+                <a href="signUp.html">Sign Up</a>
+              </li>
             </ul>
           
-          </div>
-        </div>
+          </div> <!--#myNavbar -->
+        </div> <!--container -->
       </nav>
     </header>
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
       <ol class="carousel-indicators">
@@ -149,34 +200,25 @@
 
       <div class="carousel-inner">
         <div class="item active">
-        <a href="cuisine.html#vikings">
+          <a href="cuisine.html#vikings">
             <img src="images/vikings.jpg" alt="Slide 1">
-            <div class="carousel-caption">
-              <h1>Vikings Promo</h1>
-            </div>
-        </a>
-      </div>
-            
-      
+          </a>
+        </div>
 
         <div class="item">
           <a href="cuisine.html#dads">
             <img src="images/dads.jpg" alt="Slide 2">
-            <div class="carousel-caption">
-              <h1>Dads Kamayan Promo</h1>
-            </div>
           </a>
         </div>
 
         <div class="item">
           <a href="cuisine.html#yakimix">
             <img src="images/yakimix.jpg" alt="Slide 3">
-            <div class="carousel-caption">
-              <h1>Yakimix Graduation Promo</h1>
-            </div>
           </a>
         </div>
-      </div>
+
+     <!--  </div> .carousel-inner  -->
+
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>  
@@ -189,16 +231,18 @@
 
       </div> <!-- carousel-inner -->
     </div> <!-- #myCarousel -->
+
     <div class="container">
       <div class="container-fluid row">
         <div class="col-md-1 col-sm-1">
           <img src="images/clock.jpg">
         </div>
+
         <div class="col-md-11 col-sm-11">
           <h1 class="text-warning">Friendly Reminder!</h1>
           <p>Table will only be held for 30 mins after booking time. Bookings not guaranteed for late arrivals.</p>
-   
         </div>
+
      </div> <!-- Container-fluid -->
      <hr>
 </div> <!-- Container -->
@@ -206,40 +250,40 @@
     <div class="container">
       <div class="container-fluid">
         <div class="col-md-3 col-sm-6">
-        <h4>Most Rated Restaurant today</h4>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <img width="100%;" src="images/sentro1771.jpg">
-          </div>
-          <div class="panel-body">
-             <h3>Sentro 1771</h3>
-              <p style="text-align: center;">Greenbelt 3, Ayala Center, Makati City</p>
-              <a href="cuisine.html#filipino">
-                <button>Check it out</button>
-              </a>
-          </div>
-        </div>
-        </div>
-         <div class="col-md-3 col-sm-6">
-        <h4>Online Delivery Soon</h4>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <img width="100%;" src="images/delivery.png">
-          </div>
-          <div class="panel-body">
-             <h3>Online Delivery Soon</h3><br>
-             
-              <button class="btn btn-default">Online Delivery</button>
-             
+          <h4>Most Rated Restaurant today</h4>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img width="100%;" src="images/sentro1771.jpg">
+            </div>
+            <div class="panel-body">
+               <h3>Sentro 1771</h3>
+                <p style="text-align: center;">Greenbelt 3, Ayala Center, Makati City</p>
+                <a href="cuisine.html#filipino">
+                  <button>Check it out</button>
+                </a>
+            </div>
           </div>
         </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h4>Online Delivery Soon</h4>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <img width="100%;" src="images/delivery.png">
+            </div>
+            <div class="panel-body">
+               <h3>Online Delivery Soon</h3><br>
+               <button class="btn btn-default">Online Delivery</button>
+            </div>
+          </div>
         </div>
         <div class="col-md-12 col-sm-12">
-          <h3>For More questions <a href="mailto:lafuente1101403@ceu.edu.ph">Click Here</a></h3>
+          <h3>For More Inquiries <a href="mailto:lafuente1101403@ceu.edu.ph">Email Us</a></h3>
         </div>
       </div> <!-- Container-fluid -->
     </div> <!-- Container -->
     <hr>
+
     <footer class="container">
 
     <div class="container-fluid row">
@@ -259,7 +303,7 @@
             </li>
 
             <li>
-              <a href="#"><img src="images/google.svg"></a>
+              <a href="#"><img src="images/Google.svg"></a>
             </li>
 
             <li>
@@ -271,8 +315,8 @@
             </li>
 
           </ul>
-        </div>
-    </div>
+        </div> <!--.social -->
+    </div> <!--container-fluid -->
 
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
